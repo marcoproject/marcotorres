@@ -1,26 +1,55 @@
-body{
-  background:  #0BD4B5;
+body {
+  background: #0bd4b5;
 }
 
-div{
-  display: flex;
-  justify-content:center;
+div {
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Hack;
+  color: hsl(0, 0%, 13%);
+  font-style: normal;
+  font-weight:100;
+  mix-blend-mode: normal;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
 }
-#avatar-img{
-  width: 15%;
-}
-
-h1{
-
-font-family: Hack;
-font-style: normal;
-font-weight: normal;
-font-size: 72px;
-line-height: 84px;
-display: flex;
-align-items: center;
-text-align: center;
-text-decoration-line: underline;
+#avatar-img {
+  
+  width: max(256px, 20vw);
 }
 
+div h1 {
+  
+  font-size: max(48px, 4vw);
+  margin-block-end: max(12px, 1vw);
+  text-decoration-line: underline;
+
+}
+
+div h2 {
+  
+  font-family: Halant;
+  font-size: max(27px, 2.3vw);
+  font-weight: unset;
+  left: max(60px,4.5vw);
+  margin-block-start: 0;
+  position: relative;
+  
+}
+#social{
+  width: max(350px, 30vw);
+margin-top: max(12px, 1vw);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.social-img {
+  width: max(100px, 8vw);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+div a{
+  margin-top: max(36px, 3vw);
+  font-size: max(20px, 2.3vw);
+}
