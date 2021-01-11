@@ -1,0 +1,26 @@
+body{
+  background:  #0BD4B5;
+}
+
+div{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+#avatar-img{
+  width: 15%;
+}
+
+h1{
+
+font-family: Hack;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 84px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration-line: underline;
+}
+
