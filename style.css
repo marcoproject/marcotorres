@@ -2,54 +2,108 @@ body {
   background: #0bd4b5;
 }
 
+a:link,
+a:visited,
+a:active {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+a:hover {
+  color: bisque;
+  text-decoration: underline;
+}
+
 div {
   align-items: center;
+  color: #212121;
   display: flex;
-  flex-direction: column;
-  font-family: Hack;
-  color: hsl(0, 0%, 13%);
-  font-style: normal;
-  font-weight:100;
-  mix-blend-mode: normal;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  
+  flex-direction: column;
+  font-family: Hack, monospace; 
+  font-style: normal;
+  font-weight: 100;
+  mix-blend-mode: normal;
 }
 #avatar-img {
-  
-  width: max(256px, 20vw);
+  margin-top: max(12px, 0.7vw);
+  content: url("img/avatar1.svg");
+  filter: drop-shadow(0px 2px 2px rgba(181, 217, 236, 0.9));
+  width: max(256px, 15vw);
 }
 
 div h1 {
-  
-  font-size: max(48px, 4vw);
-  margin-block-end: max(12px, 1vw);
+  font-size: max(48px, 3vw);
+  margin-bottom: 0;
   text-decoration-line: underline;
-
 }
 
 div h2 {
-  
-  font-family: Halant;
-  font-size: max(27px, 2.3vw);
+  font-family: 'Halant', serif;
+  font-size: max(27px, 1.5vw);
   font-weight: unset;
-  left: max(60px,4.5vw);
   margin-block-start: 0;
   position: relative;
-  
+  text-align: end;
 }
-#social{
-  width: max(350px, 30vw);
-margin-top: max(12px, 1vw);
+
+#nome {
+  display: inline;
+}
+#social {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: max(12px, 0.7vw);
+  width: max(350px, 20vw);
 }
 .social-img {
-  width: max(100px, 8vw);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: translateX(0) scale(1);
+  transition: filter 0.5s ease, transform 0.5s ease;
+  width: max(100px, 5.5vw);
 }
 
-div a{
-  margin-top: max(36px, 3vw);
-  font-size: max(20px, 2.3vw);
+.social-img:hover {
+  filter: invert(16%) sepia(15%) saturate(542%) hue-rotate(160deg) brightness(95%) contrast(94%);
+  transform: translateX(0px) scale(1.2);
+}
+
+#mail {
+  color: #364c59;
+  font-size: max(24px, 1.5vw);
+  margin-top: max(48px, 4vw);
+  transition: color 1, 5s ease;
+}
+
+#mail:hover {
+  color: #212121;
+  text-decoration: none;
+  transition: color 1, 5s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #212121;
+  }
+  #avatar-img {
+    content: url("img/avatar2.svg");
+  }
+  div {
+    color: rgb(155, 155, 155);
+  }
+  #mail {
+    color: rgb(155, 155, 155);
+  }
+  #mail:hover {
+    color: whitesmoke;
+  }
+  .social-img {
+      brightness(101%) contrast(86%);
+    filter: invert(53%) sepia(80%) saturate(0%) hue-rotate(265deg)
+  }
+
+  .social-img:hover {
+      brightness(106%) contrast(100%);
+    filter: invert(93%) sepia(99%) saturate(4%) hue-rotate(168deg)
+  }
 }

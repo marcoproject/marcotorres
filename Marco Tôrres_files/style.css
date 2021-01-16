@@ -1,0 +1,70 @@
+body {
+  background: #0BD4B5;
+}
+
+div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Hack;
+  color: hsl(0, 0%, 13%);
+  font-style: normal;
+  font-weight: 100;
+  mix-blend-mode: normal;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#avatar-img {
+  width: max(256px, 15vw);
+}
+
+div h1 {
+  font-size: max(48px, 3vw);
+  margin-bottom: 0;
+  text-decoration-line: underline;
+}
+
+div h2 {
+  font-family: Halant;
+  font-size: max(27px, 1.5vw);
+  font-weight: unset;
+  left: max(60px, 4vw);
+  margin-block-start: 0;
+  position: relative;
+}
+#social {
+  width: max(350px, 20vw);
+  margin-top: max(12px, 0.7vw);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.social-img {
+  width: max(100px, 5.5vw);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+}
+
+.icon{
+  fill:#F4B459;
+}
+
+div a {
+  margin-top: max(96px, 10vw);
+  font-size: max(20px, 1.5vw);
+
+}
+
+.land {
+  fill: #4ED5BD;
+}
+
+.pin-external {
+  fill: #F4B459;
+}
+
+.pin-internal {
+  fill: #CCA032;
+}
+
+.water {
+  fill: #26A6D1;
+}

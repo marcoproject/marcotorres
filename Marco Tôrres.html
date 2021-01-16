@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="pt-pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Marco Tôrres_files/normalize.css">
+    <link rel="stylesheet" href="./Marco Tôrres_files/style.css">
+    <title>Marco Tôrres</title>
+  </head>
+  <body class="vsc-initialized">
+    <div>
+      <img id="avatar-img" src="./Marco Tôrres_files/avatar.png" alt="imagem ao estilo cartoon representando Marco Tôrres">
+      <h1>Marco Tôrres</h1>
+      <h2>Front-End Developer</h2>
+      <span id="social">
+        <img class="social-img" src="./Marco Tôrres_files/linkedin.svg" alt="imagem ao estilo cartoon representando Marco Tôrres">
+        <img class="social-img" src="./Marco Tôrres_files/github.svg" alt="imagem ao estilo cartoon representando Marco Tôrres">
+        <img class="social-img" src="./Marco Tôrres_files/behance.svg" alt="imagem ao estilo cartoon representando Marco Tôrres">
+      </span>
+      <a href="mailto:%20marco.aureliostd@outlook.com">marco.aureliostd@outlook.com</a>
+    </div>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 150">
+  <g id="map">
+    <path class="land" d="M31.922 31.966l-6.986-10.973-17.902.021-7.034 10.952 16.039.021 15.883-.021z"></path>
+
+    <path class="pin-external" d="M16-.001c-5.52 0-9.995 4.233-9.995 9.455 0 .208.189 3.026.924 4.296 2.473 5.364 9.061 11.278 9.071 11.257.009.031 6.625-5.918 9.086-11.287.859-1.733.909-4.164.909-4.266 0-5.221-4.475-9.455-9.995-9.455zm-.001 14.004c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+
+    <path class="pin-internal" d="M15.999 5.003c-2.761 0-5 2.238-5 5 0 2.763 2.239 5 5 5 2.763 0 5-2.238 5-5 0-2.761-2.237-5-5-5zm0 8c-1.657 0-3-1.343-3-3 0-1.656 1.343-3 3-3s3 1.344 3 3c0 1.657-1.343 3-3 3z"></path>
+
+    <path class="water" d="M22.999 28.003c-1.251.559-3.952 1.016-5.017 1.012-.918-.006-3.708-.592-4.983-1.012-.122-.039-3.574-1.736-6-2-2.524-.271-3 0-3 0l-.862 1.078-3.137 4.885 16.039.021 15.883-.021-4.291-6.738c-1.111.675-4.413 2.677-4.632 2.775z"></path>
+  </g>
+</svg>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
