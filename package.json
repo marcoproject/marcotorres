@@ -1,0 +1,32 @@
+{
+  "name": "marco-torres",
+  "version": "1.0.2",
+  "description": "Site Pessoal do Marco Tôrres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Erro: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcostd/marcotorres.git"
+  },
+  "keywords": [
+    "Marco",
+    "Torres"
+  ],
+  "author": "Marco Tôrres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcostd/marcotorres/issues"
+  },
+  "homepage": "https://github.com/marcostd/marcotorres#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^7.1.0"
+  },
+  "dependencies": {
+    "gulp-notify": "^3.2.0"
+  }
+}
